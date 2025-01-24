@@ -12,3 +12,5 @@
 4. cd aws/iac/cfn/
 5. ls
 6. run "./deploy"
+7. chmod u+x delete-stack
+8. ./delete-stack
