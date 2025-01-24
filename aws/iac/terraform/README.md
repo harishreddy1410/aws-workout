@@ -6,3 +6,4 @@ https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_b
 3. terraform init
 4. terraform plan #this will show the changes making)
 5. terraform apply
+6. terraform destroy
