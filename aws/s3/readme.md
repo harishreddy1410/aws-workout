@@ -12,3 +12,7 @@ aws s3api put-object --bucket my-s3bucket-123 --key hello.txt --body hello.txt -
 # Get Metadata through the head object 
 
 aws s3api  head-object --bucket my-s3bucket-123 --key hello.txt
+
+# Cleanup 
+aws s3 rm s3:\\my-s3bucket-123\hello.txt
+aws s3 rb s3:\\my-s3bucket-123
