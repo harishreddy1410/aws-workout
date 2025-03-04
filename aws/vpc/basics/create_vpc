@@ -1,0 +1,15 @@
+#!usr/bin/env bash  
+
+#Create a VPC
+VPC_ID=(aws ec2 create-vpc \
+--cidr-block "172.1.0.0/16" \
+--tag-specifications 'ResourceType=vpc,Tags=[{Key=Name,Value=my-vpc}]' \
+--region us-east-1 \
+--query Vpc.VpcId \
+--output text)
+echo $VPC_ID
+#Create an IGW 
+#Attach an IGW 
+#Create a new subnet 
+#Explicitly associate subnet 
+#Add a Route to RouteTable to IGW 
